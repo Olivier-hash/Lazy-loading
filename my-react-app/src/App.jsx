@@ -3,7 +3,6 @@ import React, { Suspense, lazy } from "react"
 const LazyComponent = lazy(() => import("./LazyComponent"));
 
 function App() {
-  const LazyComponent = lazy(() => import("./LazyComponent"));
 
   return (
     <div>
