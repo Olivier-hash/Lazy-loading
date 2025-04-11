@@ -1,12 +1,14 @@
 import React, { Suspense, lazy } from "react"
 
-const LazyComponent = lazy(() => Wait(1000).then(() => import("./LazyComponent")));
 
 function Wait(time){
   return new Promise((resolve) => {
     setTimeout (resolve, time)
   })
 }
+
+const LazyComponent = lazy(() => Wait(1000).then(() => import("./LazyComponent")));
+
 
 function App() {
 
